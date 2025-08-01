@@ -16,23 +16,23 @@ public class Main {
         if(clock < 0 || clock >23){
             return false;
         }
-        return isBarking && clock < 8 || clock > 20;
+        return isBarking && (clock < 8 || clock >= 20) {
+            return true;
     }
 
     public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
-        if(firstAge > 13 && firstAge < 19){
+        if((firstAge>=13 && firstAge<=19)||(secondAge>=13 && secondAge<=19)||(thirdAge>=13 && thirdAge<=19))
+        {
             return true;
-        } else if (secondAge > 13 && secondAge < 19) {
-            return true;
-        } else if (thirdAge > 13 && thirdAge < 19) {
-            return true;
-        }else return false;
+        }
+
+        return false;
     }
 
     public static boolean isCatPlaying(boolean isSummer, int temp) {
-        if(isSummer && temp > 25 && temp <45){
+        if(isSummer && temp > 25 && temp <=45){
             return true;
-        } else if (!isSummer && temp >25 && temp<35) {
+        } else if (!isSummer && temp >25 && temp<=35) {
             return false;
         }else  return false;
     }
